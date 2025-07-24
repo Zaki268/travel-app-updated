@@ -205,6 +205,8 @@ const handleSubmit = async () => {
         paymentStatus: "paid",
         paymentMethod: "evcplus",
         transactionId: paymentData.params?.transactionId,
+        // transactionId: "TEST001",
+
         // paidAt: new Date().toISOString()
         // transactionId: paymentData.params.transactionId // Save transaction ID with booking
       }),

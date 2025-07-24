@@ -32,9 +32,9 @@ export default function AdminProfile() {
   useEffect(() => {
     if (user) {
       setProfileData({
-        name: user.name || "",
-        email: user.email || "",
-        phone: user.phone || "",
+        name: user?.name || "",
+        email: user?.email || "",
+        phone: user?.phone || "",
         password: "",
         confirmPassword: "",
       });

@@ -2,6 +2,7 @@ import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import COLORS from "../../constants/color";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { Slot } from 'expo-router';
 
 export default function AdminTabLayout() {
 
@@ -49,7 +50,7 @@ export default function AdminTabLayout() {
       <Tabs.Screen
         name="request"
         options={{
-          title: "Request settlement",
+          title: "Withdraw",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="car-outline" size={size} color={color} />
           ),

@@ -57,6 +57,7 @@ const fetchBookings = async () => {
       });
 
       const data = await res.json();
+      console.log("ddd",data)
       if (!res.ok) throw new Error(data.message || "Failed to update status");
 
       Alert.alert("Success", `Booking ${newStatus.toLowerCase()} successfully.`);
